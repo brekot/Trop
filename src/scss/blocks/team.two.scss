@@ -8,6 +8,18 @@
         text-transform: uppercase;
         margin: 30px 0 25px;
     }
-    &__items {}
-    &__item {}
+}
+
+@include media-breakpoint-down(sm)
+{
+    .team-page-full {
+
+        &__title {
+            margin: 30px 0 10px;
+            height: 14px;
+        }
+        &__items {
+            font-weight: 400;
+        }
+    }
 }

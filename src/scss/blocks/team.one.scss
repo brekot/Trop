@@ -11,6 +11,9 @@
         margin: 0 10px 20px;
         width: calc(25% - 20px);
     }
+    &__pict img {
+        width: 100%;
+    }
     &__box {
         padding: 30px 10px;
         position: relative;
@@ -56,6 +59,51 @@
             font-size: 12px;
             text-transform: uppercase;
             color: var(--gray-500);
+        }
+    }
+}
+
+@include media-breakpoint-between(sm, md)
+{
+    .team-page {
+
+        &__item {
+            width: calc(50% - 20px);
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .team-page {
+
+        &__items {
+            margin: 0;
+        }
+        &__item {
+            width: 100%;
+            margin: 0 0 10px;
+        }
+        &__pict {
+            width: 55%;
+        }
+        &__box {
+            width: 45%;
+            padding: 0 10px;
+        }
+        &__num {
+            left: 0;
+            top: 20px;
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0 15px;
+        }
+        &__date {
+            margin: 0;
+        }
+        &__number-block {
+            margin: 10px 0 0;
         }
     }
 }

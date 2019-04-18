@@ -12,14 +12,79 @@
         padding: 0 25px;
         text-transform: uppercase;
         transition: all .3s linear;
-        margin: 0 5px 0 0;
 
+        &:not(:last-child) {margin: 0 5px 0 0;}
         &_active,
         &:hover {
             font-weight: 700;
             color: var(--gray-dark);
             background-color: var(--white);
             border-top: 2px solid var(--yellow);
+            text-decoration: none;
+        }
+    }
+}
+
+@include media-breakpoint-only(md)
+{
+    .tab-panel {
+
+        &__item {
+            padding: 0 10px;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .tab-panel {
+
+        &__item {
+            padding: 0 10px;
+        }
+    }
+}
+
+.tab-panel-select {
+    margin: 0 0 30px;
+    position: relative;
+
+    &__items {
+        background-color: var(--white);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 40px;
+        display: none;
+    }
+    &__item {
+        font-size: 12px;
+        line-height: 38px;
+        height: 40px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+
+        &_active {
+            font-weight: 700;
+            color: var(--gray-dark);
+            background-color: var(--white);
+            border-top: 2px solid var(--yellow);
+            text-decoration: none;
+
+            &:after {
+                background: url(img/str.menu.svg) no-repeat 50%;
+                width: 11px;
+                height: 10px;
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 0 0 5px;
+            }
+        }
+        &_open:after {
+            transform: rotate(90deg);
+        }
+        &:hover {
             text-decoration: none;
         }
     }

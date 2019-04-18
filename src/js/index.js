@@ -73,6 +73,14 @@ $(function() {
         }
     });
 
+    /* - - - Раскрытие tab-panel-select - - - */
+    $('.tab-panel-select__item_active').click(function(){
+
+        $(this).toggleClass('tab-panel-select__item_open');
+        
+        $('.tab-panel-select__items').slideToggle();
+    });
+
     /* - - - Слайдер Партнеры - - - */
 //    var starSwiper = new Swiper('.partners-block .swiper-container', {
 //		loop: true,

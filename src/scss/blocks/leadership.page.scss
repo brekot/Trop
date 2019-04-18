@@ -49,5 +49,22 @@
             width: 100%;
             margin: 0 0 10px;
         }
+        &__pict {
+            width: 55%;
+        }
+        &__box {
+            width: 45%;
+            padding: 0 10px;
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__date {
+            margin: 0;
+        }
+        &__text {
+            line-height: 20px;
+        }
     }
 }
