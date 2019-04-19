@@ -1,7 +1,7 @@
 import $ from "jquery";
-import popper from "popper.js";
-import bootstrap from "bootstrap";
-import Swiper from 'swiper';
+//import popper from "popper.js";
+//import bootstrap from "bootstrap";
+//import Swiper from 'swiper';
 
 window.jQuery = $;
 window.$ = $;
