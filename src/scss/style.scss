@@ -106,6 +106,16 @@
     }
 }
 
+@include media-breakpoint-up(lg)
+{
+    .header-main {
+
+        &__logo-small {
+            position: relative;
+            left: -25px;
+        }
+    }
+}
 @include media-breakpoint-up(md)
 {
     .header-main_fixed {
@@ -601,8 +611,10 @@
 @import "./blocks/team.one.scss";
 @import "./blocks/team.two.scss";
 @import "./blocks/news.list.scss";
+@import "./blocks/news.main.scss";
 @import "./blocks/news.detail.scss";
 @import "./blocks/media.page.scss";
 @import "./blocks/history.page.scss";
 @import "./blocks/games.page.scss";
 @import "./blocks/select.year.scss";
+@import "./blocks/banner.scss";
