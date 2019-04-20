@@ -106,6 +106,10 @@ const config = {
             {
                 from: "./src/uploads",
                 to: "./local/uploads"
+            },
+            {
+                from: "./src/favicon.ico",
+                to: "./favicon.ico"
             }
         ])
     ].concat(htmlPlugins)

@@ -26,6 +26,20 @@
     }
 }
 
+@include media-breakpoint-up(md)
+{
+    .tab-panel {
+
+        &_big {
+            height: 75px;
+
+            & .tab-panel__item {
+                line-height: 73px;
+                height: 75px;
+            }
+        }
+    }
+}
 @include media-breakpoint-only(md)
 {
     .tab-panel {
@@ -88,6 +102,39 @@
         }
         &:hover {
             text-decoration: none;
+        }
+    }
+}
+
+@include media-breakpoint-up(md)
+{
+    .tab-panel-select {
+
+        &_big {
+            max-width: 170px;
+            display: inline-block;
+
+            & .tab-panel-select {
+
+                &__items {
+                    top: 75px;
+                }
+                &__item {
+                    line-height: 73px;
+                    height: 75px;
+                    padding: 0 25px;
+
+                    & span {
+                        display: inline-block;
+                        line-height: 18px;
+                        vertical-align: middle;
+                    }
+                    &:hover {
+                        background-color: var(--linght-blue-two);
+                        font-weight: 700;
+                    }
+                }
+            }
         }
     }
 }
