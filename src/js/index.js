@@ -78,7 +78,7 @@ $(function() {
 
         $(this).toggleClass('tab-panel-select__item_open');
         
-        $('.tab-panel-select__items').slideToggle();
+        $(this).next('.tab-panel-select__items').slideToggle();
     });
 
     /* - - - Слайдер Партнеры - - - */

@@ -24,6 +24,19 @@
             text-decoration: none;
         }
     }
+
+    &_blue {
+
+        & .tab-panel__item {
+            color: var(--blue-7);
+
+            &:hover,
+            &_active {
+                color: var(--white);
+                background-color: var(--blue-4);
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(md)
@@ -102,6 +115,14 @@
         }
         &:hover {
             text-decoration: none;
+        }
+    }
+
+    &_blue {
+
+        & .tab-panel-select__item {
+            color: var(--white);
+            background-color: var(--blue-4);
         }
     }
 }

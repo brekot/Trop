@@ -14,6 +14,9 @@
 
 .games-page {
 
+    &_margin {
+        margin: 0 0 100px;
+    }
     &__line {
         background-color: var(--white);
         min-height: 100px;
@@ -104,6 +107,9 @@
 
 .games-page-mobile {
 
+    &_margin {
+        margin: 0 0 50px;
+    }
     &__item {
         background-color: var(--white);
         padding: 20px;

@@ -30,6 +30,16 @@
         color: var(--white);
     }
 }
+.btn-info {
+    background-color: var(--blue-4);
+    color: var(--linght-blue-four);
+
+    &:hover,
+    &:active {
+        background-color: var(--yellow);
+        color: var(--white);
+    }
+}
 .btn-prev,
 .btn-next {
     font-weight: 700;

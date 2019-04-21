@@ -1,6 +1,6 @@
 <% var data = {
     title: "Tropic | Главная",
-    main_block_class: ""
+    main_block_class: "main-main_no-padding-bottom main-main_hide-go-top"
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 
@@ -119,7 +119,7 @@
         </div>
     </div>
 
-    <div class="games-page d-none d-md-block">
+    <div class="games-page games-page_margin d-none d-md-block">
         <div class="d-flex align-items-center justify-content-between games-page__line games-page__line_lost">
             <div class="games-page__date">
                 01.01.2019
@@ -257,7 +257,7 @@
         </div>
     </div>
 
-    <div class="games-page-mobile d-md-none">
+    <div class="games-page-mobile games-page-mobile_margin d-md-none">
         <div class="games-page-mobile__item games-page-mobile__item_lost">
             <div class="games-page-mobile__info d-flex justify-content-between">
                 <div class="games-page-mobile__time">
@@ -482,6 +482,302 @@
         </div>
         <div class="games-page-mobile__btn-block">
             <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
+        </div>
+    </div>
+
+    <div class="h2">Турнирная таблица</div>
+
+    <div class="tab-panel-select tab-panel-select_big">
+        <a href="javascript:;" class="tab-panel-select__item tab-panel-select__item_active">Все турниры</a>
+        <div class="tab-panel-select__items">
+            <a href="javascript:;" class="tab-panel-select__item">
+                <span>НХЛ Любитель 40+ Название в Три Строки</span>
+            </a>
+            <a href="javascript:;" class="tab-panel-select__item">
+                <span>НХЛ Любитель 40+ Название в Три Строки</span>
+            </a>
+            <a href="javascript:;" class="tab-panel-select__item">
+                <span>НХЛ Любитель 40+</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="standings-block">
+        <table class="standings-block__table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th></th>
+                    <th>Команда</th>
+                    <th>И</th>
+                    <th>В</th>
+                    <th>Н</th>
+                    <th>П</th>
+                    <th>Ш</th>
+                    <th>0</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="standings-block__tr-bold">
+                    <td>
+                        <span class="standings-block__num">1</span>
+                    </td>
+                    <td>
+                        <span class="standings-block__pict">
+                            <img src="local/uploads/games.icon1.png" alt="">
+                        </span>
+                    </td>
+                    <td>Тропик</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>63-6</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="standings-block__num">2</span>
+                    </td>
+                    <td>
+                        <span class="standings-block__pict">
+                            <img src="local/uploads/games.icon1.png" alt="">
+                        </span>
+                    </td>
+                    <td>Тропик</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>63-6</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="standings-block__num">3</span>
+                    </td>
+                    <td>
+                        <span class="standings-block__pict">
+                            <img src="local/uploads/games.icon1.png" alt="">
+                        </span>
+                    </td>
+                    <td>Тропик</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>63-6</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="standings-block__num">4</span>
+                    </td>
+                    <td>
+                        <span class="standings-block__pict">
+                            <img src="local/uploads/games.icon1.png" alt="">
+                        </span>
+                    </td>
+                    <td>Тропик</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>63-6</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="standings-block__num">5</span>
+                    </td>
+                    <td>
+                        <span class="standings-block__pict">
+                            <img src="local/uploads/games.icon1.png" alt="">
+                        </span>
+                    </td>
+                    <td>Тропик</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>63-6</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="standings-block__btn-block">
+            <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
+        </div>
+    </div>
+
+</div>
+<div>
+
+    <div class="team-main">
+        <div class="container">
+
+            <div class="h2 white-color">Игроки</div>
+
+            <div class="position-relative">
+                <div class="team-main__top-btn">
+                    <a href="javascript:;" class="btn btn-info">Показать всех игроков</a>
+                </div>
+            </div>
+
+            <div class="tab-panel tab-panel_blue d-none d-md-block">
+                <a href="javascript:;" class="tab-panel__item tab-panel__item_active">ХК Тропик (НХЛ)</a>
+                <a href="javascript:;" class="tab-panel__item">Тропик НТХЛ</a>
+                <a href="javascript:;" class="tab-panel__item">СХК Тропик</a>
+                <a href="javascript:;" class="tab-panel__item">Следж-хоккейная команда Тропик</a>
+                <a href="javascript:;" class="tab-panel__item">ОКСШОР</a>
+            </div>
+
+            <div class="tab-panel-select tab-panel-select_blue d-md-none">
+                <a href="javascript:;" class="tab-panel-select__item tab-panel-select__item_active">ХК Тропик (НХЛ)</a>
+                <div class="tab-panel-select__items">
+                    <a href="javascript:;" class="tab-panel-select__item">Тропик НТХЛ</a>
+                    <a href="javascript:;" class="tab-panel-select__item">СХК Тропик</a>
+                    <a href="javascript:;" class="tab-panel-select__item">Следж-хоккейная команда Тропик</a>
+                    <a href="javascript:;" class="tab-panel-select__item">ОКСШОР</a>
+                </div>
+            </div>
+
+            <div class="team-main__items d-flex flex-wrap">
+                <div class="team-main__item">
+                    <div class="h3">Бомбардиры</div>
+                    <div class="team-main__block-top d-flex d-sm-block align-items-center d-sm-block">
+                        <div class="team-main__pict">
+                            <img src="local/uploads/team1.jpg" alt="">
+                        </div>
+                        <div class="team-main__box font-condensed">
+                            <div class="team-main__num">23</div>
+                            <div class="team-main__name">Худобин Николай</div>
+                            <div class="team-main__info">
+                                <span class="d-block d-sm-none">10</span> очков <span class="d-none d-sm-inline-block">10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-condensed">
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">9</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">8</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">7</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-main__item">
+                    <div class="h3">Ассистенты</div>
+                    <div class="team-main__block-top d-flex d-sm-block align-items-center d-sm-block">
+                        <div class="team-main__pict">
+                            <img src="local/uploads/team2.jpg" alt="">
+                        </div>
+                        <div class="team-main__box font-condensed">
+                            <div class="team-main__num">11</div>
+                            <div class="team-main__name">Худобин Николай</div>
+                            <div class="team-main__info">
+                                <span class="d-block d-sm-none">15</span> пассов <span class="d-none d-sm-inline-block">15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-condensed">
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">9</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">8</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">7</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-main__item">
+                    <div class="h3">Снайперы</div>
+                    <div class="team-main__block-top d-flex d-sm-block align-items-center d-sm-block">
+                        <div class="team-main__pict">
+                            <img src="local/uploads/team3.jpg" alt="">
+                        </div>
+                        <div class="team-main__box font-condensed">
+                            <div class="team-main__num">17</div>
+                            <div class="team-main__name">Худобин Николай</div>
+                            <div class="team-main__info">
+                                <span class="d-block d-sm-none">8</span> голов <span class="d-none d-sm-inline-block">8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-condensed">
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">9</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">8</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">7</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-main__item">
+                    <div class="h3">Вратари</div>
+                    <div class="team-main__block-top d-flex d-sm-block align-items-center d-sm-block">
+                        <div class="team-main__pict">
+                            <img src="local/uploads/team4.jpg" alt="">
+                        </div>
+                        <div class="team-main__box font-condensed">
+                            <div class="team-main__num">5</div>
+                            <div class="team-main__name">Худобин Николай</div>
+                            <div class="team-main__info">
+                                <span class="d-block d-sm-none">2.01</span> надёжность <span class="d-none d-sm-inline-block">2.01</span>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="font-condensed">
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">9</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">8</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">7</div>
+                        </div>
+                        <div class="team-main__line d-flex align-items-center justify-content-between">
+                            <div>Касаткин Александр</div>
+                            <div class="team-main__count">6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#top-of-page" class="go-top go-to">Вернуться наверх</a>
         </div>
     </div>
 
