@@ -14,13 +14,14 @@
         font-weight: 700;
         text-transform: uppercase;
         transition: all .3s linear;
+        border-top: 2px solid transparent;
 
         &:not(:last-child) {margin: 0 5px 0 0;}
         &_active,
         &:hover {
             color: var(--gray-dark);
             background-color: var(--white);
-            border-top: 2px solid var(--yellow);
+            border-color: var(--yellow);
             text-decoration: none;
         }
     }
@@ -100,14 +101,21 @@
             border-top: 2px solid var(--yellow);
             text-decoration: none;
 
-            &:after {
-                background: url(img/str.menu.svg) no-repeat 50%;
-                width: 11px;
-                height: 10px;
-                content: "";
-                display: inline-block;
-                vertical-align: middle;
-                margin: 0 0 0 5px;
+            & span {
+                position: relative;
+                padding: 0 15px 0 0;
+
+                &:after {
+                    background: url(img/str.menu.svg) no-repeat 50%;
+                    width: 11px;
+                    height: 10px;
+                    content: "";
+                    position: absolute;
+                    vertical-align: middle;
+                    margin: -5px 0 0;
+                    right: 0;
+                    top: 50%;
+                }
             }
         }
         &_open:after {

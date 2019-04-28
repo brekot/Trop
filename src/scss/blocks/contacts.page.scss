@@ -5,7 +5,7 @@
 
 // Страница Контакты - карта
 .contacts-map {
-    background: url(uploads/map.jpg) no-repeat center / cover;
+    //background: url(uploads/map.jpg) no-repeat center / cover;
     height: 670px;
     position: relative;
 
@@ -17,6 +17,7 @@
         position: absolute;
     }
     &__addr-text {
+        box-shadow: 0 10px 25px 0 rgba(44,62,122,.1);
         background: var(--light);
         font-weight: 700;
         line-height: 50px;

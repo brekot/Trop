@@ -23,5 +23,11 @@
     &_name {
         font-weight: 700;
         text-transform: uppercase;
+        transition: opacity .3s linear;
+
+        &:hover {
+            opacity: .5;
+            text-decoration: none;
+        }
     }
 }

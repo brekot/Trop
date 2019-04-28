@@ -79,18 +79,7 @@ $(function() {
         $(this).toggleClass('tab-panel-select__item_open');
         
         $(this).next('.tab-panel-select__items').slideToggle();
-    });
 
-    /* - - - Слайдер Партнеры - - - */
-//    var starSwiper = new Swiper('.partners-block .swiper-container', {
-//		loop: true,
-//		slidesPerView: 8,
-//		spaceBetween: 10,
-//        breakpoints: {
-//            575: {
-//              slidesPerView: 1,
-//              spaceBetween: 30
-//            },
-//        }
-//    });
+        return false;
+    });
 });
