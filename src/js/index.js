@@ -74,7 +74,7 @@ $(function() {
     });
 
     /* - - - Раскрытие tab-panel-select - - - */
-    $('.tab-panel-select__item_active').click(function(){
+    $(document).on('click', '.tab-panel-select__item_active', function(){
 
         $(this).toggleClass('tab-panel-select__item_open');
         
